@@ -35,7 +35,7 @@ declare namespace mendix {
 			 * Returns the value of an attribute.
 			 * For reference attributes, use mendix/lib/MxObject#getReference and mendix/lib/MxObject#getReferences instead.
 			 */
-			get(attr: string): string | number | boolean; //add external big	
+			get(attr: string): string | number | boolean | Big; //add external big	
 			removeReferences(attr: string, guids: string[]): boolean;
 			set(attr: string, val: any): boolean;
 			FetchCallback(requested: any): void;
